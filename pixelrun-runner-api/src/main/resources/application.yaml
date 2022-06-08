@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: pixelrun-runner-api
+  liquibase:
+    change-log: classpath:/sql/databaseChangeLog.xml
+    default-schema: pixelrun_runner
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521/ORCLCDB.localdomain
+    username: pixelrun_runner
+    password: pixelrun_runner
+    driver-class-name: oracle.jdbc.OracleDriver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.Oracle12cDialect
+        format_sql: true
+        jdbc:
+          lob:
+            non_contextual_creation: true
+    show-sql: false
+    hibernate:
+      ddl-auto: validate
