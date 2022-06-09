@@ -8,6 +8,12 @@
         <version>2.7.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+
+    <modules>
+        <module>pixelrun-runner-api</module>
+        <module>pixelrun-user-api</module>
+    </modules>
+
     <groupId>io.pixelrun</groupId>
     <artifactId>main</artifactId>
     <version>0.0.1-SNAPSHOT</version>
